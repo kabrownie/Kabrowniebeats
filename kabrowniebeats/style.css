@@ -1,21 +1,20 @@
 body{
     background: fixed;
-    background-color: rgb(14, 66, 90);
+    background-color: rgb(26, 27, 27);
     color: rgb(255, 255, 255);
 }
 
 /*header*/
 .header {
     overflow: auto;
-    background-color: rgb(14, 66, 90);
+    background-color: rgb(26, 27, 27);
     padding: 10px;
     color: blanchedalmond;
-    box-shadow: 0 0 20px rgb(0, 0, 0);
-    border-radius: 10px;
+    box-shadow: 0 0 20px rgb(99, 91, 91);
     position: relative;
+    margin: 0px;
         
 }
-
 .header a {
     color: rgba(0, 0, 0, 0.541);
     text-align: left;
@@ -31,13 +30,13 @@ body{
    transition: 0.6s ease;
    border-radius: 20px;
    
-}   
+}
 
 .header a:hover {
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: rgb(86, 129, 221, 0.541);
     
-   background-color: rgb(255, 255, 255);
+   background-color: rgb(255, 255, 255, 0.103);
    
     
      
@@ -64,6 +63,13 @@ body{
     font-weight: lighter;
     position: relative;
     
+}
+.cover img{
+    text-align: center;
+    padding: 0%;
+    width: 100%;
+    box-shadow: 0 0 30px rgb(163, 157, 157);
+    margin-top: 0%;
 }
 @media screen and (max-width:1230px){
     .logo{
@@ -132,33 +138,6 @@ main{
     box-shadow: 0 0 0.5px white;
 }
 
-/*slideshow*/
-*{box-sizing: border-box;}
-.Slideshow container{
-    max-width: 1000px;   position: relative;
-    margin: 5px; 
-}
-
-.mySlides{
-    display: none;
-}
-
-
-.fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade{
-    from{opacity: .4;}
-    to{opacity:  1;}
-}
-@keyframes fade {
-    from{opacity: .4;}
-    to{opacity:  1;}
-}
 
 /*footer*/
 footer{
