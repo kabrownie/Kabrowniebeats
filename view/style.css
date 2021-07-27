@@ -16,7 +16,14 @@ body{
     margin: 0px;
         
 }
-.header a {
+.click{
+  display: none;
+}
+.nav-list{
+  display: none;
+}
+
+.header-link {
     color: rgb(35, 109, 119);
     text-align: left;
     padding: 5px;
@@ -33,12 +40,9 @@ body{
    
 }
 
-.header a:hover {
+.header-link:hover {
     color: rgb(255, 255, 255);
-  
-   
-    
-     
+
 }
 
 .logo img{
@@ -47,7 +51,9 @@ body{
    
 }
 
-
+.nav-toggle{
+  display: none;
+}
 
 .logo{
    
@@ -71,8 +77,7 @@ body{
     
     margin-top: 0%;
 }
-button{ display:none;
-}
+
 
 @media screen and (max-width:1230px){
     .logo{
@@ -85,15 +90,24 @@ button{ display:none;
     .header{
         padding: 5px 15px;
     }
-    .header a {
-        
-        font-size: 14px;
-        padding : 2px;
-       
+    
       
-    }
+  
     
 }
+@media screen and (min-width:0px) and (max-width:655px){
+.nav-toggle {
+ 
+  background: transparent;
+  border: none;
+  float: right;
+  z-index: 1000;
+
+}
+
+}
+
+
 
 @media screen and (max-width:655px){
     .logo{
@@ -102,21 +116,44 @@ button{ display:none;
         padding: 1px;
        
     }
-    .header a {
-        display: none;
-       
-    }
+  .header-link{display: none;}
+    
+  .nav{
+    position: fixed;
+    background: rgb(17, 19, 19);
+    color:white;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right:0;
+    z-index: 100;
 
-    button{
-      display: inline-block;
-      background: transparent;
-      border: none;
-     
-    }
-    .click {
-      float: right;
-      
-    }
+    transform: translateX(0%);
+   
+
+    transition: transform 250ms cubic-bezier(0.5, 0, 0.5, 1);
+
+  }
+  .nav-list{
+    display: block;
+  
+    list-style: none;
+  }
+  li{
+    margin: 10px;
+  }
+    .nav-link{
+      color: rgb(35, 109, 119);
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 20px;
+   size: 0%;
+   font-family: sans-serif;
+   transition: 0.6s ease;
+
+ }
+
+    
     .lines {
       height: 2px;
       width: 25px;
@@ -128,7 +165,8 @@ button{ display:none;
     }
     
     
-}
+
+
 
 /*main home*/
 main{
@@ -159,10 +197,8 @@ footer a :hover{
 }
 /*me*/
 /*shop*/
-.iframe{
-    text-align: center;
+
     
-}
 /*slideshow*/
 *{box-sizing: border-box;}
 body {font-family: Verdana, sans-serif;}
@@ -212,4 +248,5 @@ img {vertical-align: middle;}
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .text {font-size: 11px}
+}
 }
