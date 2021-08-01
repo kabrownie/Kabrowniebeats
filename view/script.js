@@ -18,3 +18,9 @@ function showSlides() {
   dots[slideIndex-1].className += " active";
   setTimeout(showSlides, 4000); // Change image every 4 seconds
 }
+
+//nav
+const navToggle = document.querySelector('.nav-toggle');
+navToggle.addEventListener('click', () => {
+    document.body.classList.toggle('nav-open');
+  });

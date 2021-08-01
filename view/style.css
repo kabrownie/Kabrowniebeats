@@ -11,13 +11,23 @@ body{
     background-color: rgb(26, 27, 27);
     padding: 10px;
     color: blanchedalmond;
-    box-shadow: 0 0 20px rgb(99, 91, 91);
-    position: relative;
-    margin: 0px;
-        
+    
+    position: fixed;
+    right: 0;
+    left: 0;
+  z-index: 1;
+    margin: 0px;    
 }
-.click{
-  display: none;
+.nyuma{
+  overflow: auto;
+  background-color: rgba(26, 27, 27, 0);
+  padding: 10px;
+  color: rgba(255, 235, 205, 0);
+
+  position: relative;
+ margin-top: 5px;
+  margin: 25px; 
+
 }
 .nav-list{
   display: none;
@@ -31,7 +41,6 @@ body{
     font-size: 20px;
     line-height: 20px;
     float: right;
-   
    size: 100%;
    margin: 5px;
    font-family: sans-serif;
@@ -42,13 +51,11 @@ body{
 
 .header-link:hover {
     color: rgb(255, 255, 255);
-
 }
 
 .logo img{
     float: left;
     height: 50px;
-   
 }
 
 .nav-toggle{
@@ -68,46 +75,35 @@ body{
     padding-inline-start: 10px;
     font-weight: lighter;
     position: relative;
-    
 }
 .cover img{
     text-align: center;
     padding: 0%;
     width: 100%;
-    
     margin-top: 0%;
 }
-
 
 @media screen and (max-width:1230px){
     .logo{
         font-size: 30px;
-        
     }
     .logo img {
       height: 30px;
     }
     .header{
         padding: 5px 15px;
-    }
-    
-      
-  
-    
+    }   
 }
+
 @media screen and (min-width:0px) and (max-width:655px){
 .nav-toggle {
- 
   background: transparent;
   border: none;
   float: right;
+  display: block;
   z-index: 1000;
-
+  position: relative;
 }
-
-}
-
-
 
 @media screen and (max-width:655px){
     .logo{
@@ -115,6 +111,18 @@ body{
         text-align: center;
         padding: 1px;
        
+    }
+    .nyuma img{
+      display: none;
+    }
+    .nyuma {
+      overflow: auto;
+    padding: 10px;
+    
+    right: 0;
+    left: 0;
+    margin: 0px; 
+
     }
   .header-link{display: none;}
     
@@ -127,21 +135,20 @@ body{
     left: 0;
     right:0;
     z-index: 100;
-
-    transform: translateX(0%);
-   
-
+    transform: translateX(100%);
     transition: transform 250ms cubic-bezier(0.5, 0, 0.5, 1);
-
   }
+
   .nav-list{
     display: block;
-  
     list-style: none;
   }
+
   li{
     margin: 10px;
   }
+  
+
     .nav-link{
       color: rgb(35, 109, 119);
     text-decoration: none;
@@ -150,23 +157,23 @@ body{
    size: 0%;
    font-family: sans-serif;
    transition: 0.6s ease;
-
  }
 
-    
     .lines {
       height: 2px;
       width: 25px;
       margin: 5px;
       background-color:rgb(0, 183, 255);
       display: block;
-    
-    
     }
-    
-    
 
-
+    .nav-open .nav{
+      transform: translateX(50%);
+    }
+    .nav-open .nav-toggle{
+      position: fixed;
+      right: 0 ;
+    }
 
 /*main home*/
 main{
@@ -174,7 +181,6 @@ main{
     margin: 2px;
     box-shadow: 0 0 0.5px white;
 }
-
 
 /*footer*/
 footer{
@@ -198,7 +204,6 @@ footer a :hover{
 /*me*/
 /*shop*/
 
-    
 /*slideshow*/
 *{box-sizing: border-box;}
 body {font-family: Verdana, sans-serif;}
@@ -248,5 +253,6 @@ img {vertical-align: middle;}
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .text {font-size: 11px}
+}
 }
 }
