@@ -66,8 +66,8 @@ body{
 .logo{
    
     font-size: 50px;
-    font-style: italic;
-    font-family: fantasy;
+    
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     float: left;
     padding-right:10px;
     color: rgb(0, 183, 255);
@@ -129,10 +129,11 @@ body{
     
   .nav{
     position: fixed;
-    background: rgb(17, 19, 19);
+    background:  rgb(26, 27, 27);
     color:white;
+     box-shadow:0 0 10px black ;
     top: 0;
-    bottom: 0;
+    bottom: 20;
     left: 0;
     right:0;
     z-index: 100;
@@ -170,11 +171,12 @@ body{
     }
 
     .nav-open .nav{
-      transform: translateX(10%);
+      transform: translateX(30%);
     }
     .nav-open .nav-toggle{
       position: fixed;
       right: 0 ;
+      
     }
 
 /*main home*/
