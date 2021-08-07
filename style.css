@@ -3,6 +3,7 @@ body{
     background-color: rgb(26, 27, 27);
     color: rgb(255, 255, 255);
     margin: 0;
+    
 }
 
 /*header*/
@@ -147,8 +148,6 @@ body{
   li{
     margin: 10px;
   }
-  
-
     .nav-link{
       color: rgb(35, 109, 119);
     text-decoration: none;
