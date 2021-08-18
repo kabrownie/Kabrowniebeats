@@ -260,3 +260,6 @@ footer a :hover{
   color: rgb(255, 255, 255);
   text-decoration: none;
 }
+iframe{
+  text-align: center;
+}
