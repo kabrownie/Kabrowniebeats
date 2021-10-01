@@ -1,0 +1,3 @@
+add bpm section
+control
+line 281 overflow scroll
