@@ -39,6 +39,7 @@ let All_song = [
           <p id="title">${All_song[i].name}</p>
           <p>${All_song[i].singer}</p>
        </div>
+       
        <button id="play_btn"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
        </div>
      </div>`;
@@ -47,4 +48,4 @@ let All_song = [
  };
  
  
- /*please follow all the rules so that you do not face any problem*/
+ 

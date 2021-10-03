@@ -25,5 +25,5 @@ navToggle.addEventListener('click', () => {
     document.body.classList.toggle('nav-open');
   });
 
-  //play list
+
 
