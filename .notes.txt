@@ -1,3 +1,10 @@
+5/10 2021
+to do
 add bpm section
-control
-line 281 overflow scroll
+download section
+cart section
+upload functtion
+lincence information
+payment method
+auto next
+mailing list

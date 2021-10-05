@@ -20,7 +20,7 @@ let All_song = [
     },
     
  ];
- /*you can add more song & images from you computer*/
+ /*can add more song & images from you computer*/
  
  
  /*tracks*/
