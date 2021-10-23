@@ -497,12 +497,9 @@ background: rgba(255,255,255,0.1);
 margin-top: 2em;
 height: 200px;
 width: 200px;
-border-radius: 50%;
+border-radius: 5%;
 overflow: hidden;
-box-shadow: inset 5px 5px 5px rgba(0,0,0,0.2),
-            inset -5px -5px 15px rgba(255,255,255,0.1),
-			5px 5px 15px rgba(0,0,0,0.3),
-			-5px -5px 15px rgba(255,255,255,0.1);
+
 }
 .popup_music_player img{
   height: 100%;
