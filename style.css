@@ -594,7 +594,7 @@ overflow: hidden;
   width: 5px;
   margin: 0 3px;
   border-radius: 15px;
-  background: rgba(255,255,255,0.4);
+  background: rgba(0, 255, 234, 0.4);
   animation: animate 0.5s linear alternate infinite;
 			
 }
