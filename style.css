@@ -198,6 +198,7 @@ main{
 *{box-sizing: border-box;}
 body {font-family: Verdana, sans-serif;}
 .mySlides {display: none;}
+
 img {vertical-align: middle;}
 
 /* Slideshow container */
@@ -303,3 +304,24 @@ footer a :hover{
   }
 }
 
+/* lincense */
+.lin{
+  display: flex;
+}
+.card{
+   /* display: flex; */
+   flex-direction: column;
+   padding: 2rem;
+  max-width: 20%;
+  min-width: 20%;
+font-size: 90%;
+cursor:context-menu;
+transition: 0.6s ease;
+border: solid 0.1px rgb(59, 91, 102);
+text-align: center;
+
+}
+.card:hover{
+  background-color:rgba(59, 91, 102, 0.263);
+
+}
