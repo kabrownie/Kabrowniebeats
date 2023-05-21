@@ -1,3 +1,3 @@
 # Kabrownie
  music website
- https://kabrownie.me/kabrowniebeats
+https://kabrownie.me/Kabrowniebeats/
